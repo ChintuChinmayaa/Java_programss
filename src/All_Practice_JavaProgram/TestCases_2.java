@@ -3,14 +3,14 @@ package All_Practice_JavaProgram;
 public class TestCases_2 {
     public static void main(String[] args) {
         String name = "chinmaya"; // The string to check
-        String vowels = "aeiou";  // String containing all vowels
+          // String containing all vowels
         int count = 0;            // Counter for the number of vowels
 
         // Loop through each character in the name
-        for (int i = 0; i < name.length(); i++) {
+        for (int i = 0; i <= name.length() - 1; i++) {
             char ch = name.charAt(i); // Get the character at index i
             // Check if the character is a vowel
-            if (vowels.indexOf(ch) != -1) {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 System.out.println("Vowel found: " + ch);
                 count++; // Increment the counter
             }
@@ -20,4 +20,5 @@ public class TestCases_2 {
         System.out.println("Total number of vowels: " + count);
     }
 }
+
 
